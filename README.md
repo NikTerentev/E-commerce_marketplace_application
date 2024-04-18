@@ -20,8 +20,8 @@ mvn spring-boot:run
 
 ## Примеры работы
 
-!(references/ref_1.png)
+![ref_1](references/ref_1.png)
 
-!(references/ref_2.png)
+![ref_2](references/ref_2.png)
 
-!(references/ref_3.png)
+![ref_3](references/ref_3.png)
