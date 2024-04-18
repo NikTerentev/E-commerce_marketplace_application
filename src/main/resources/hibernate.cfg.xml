@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">
+            jdbc:postgresql://localhost:5432/e-commerce
+        </property>
+        <property name="connection.driver_class">org.postgresql.Driver
+        </property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">postgres</property>
+        <property name="org.hibernate.flushMode">ALWAYS</property>
+        <property name="hibernate.temp.use_jdbc_metadata_defaults">false
+        </property>
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.PostgreSQLDialect
+        </property>
+        <mapping class="org.example.lab_1.model.User"/>
+        <mapping class="org.example.lab_1.model.Product"/>
+        <mapping class="org.example.lab_1.model.Category"/>
+        <mapping class="org.example.lab_1.model.Characteristics"/>
+        <mapping class="org.example.lab_1.model.Order"/>
+        <mapping class="org.example.lab_1.chatroom.ChatRoom"/>
+        <mapping class="org.example.lab_1.chat.ChatMessage"/>
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
