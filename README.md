@@ -17,3 +17,11 @@ mvn spring-boot:run
 После окончания деплоя перейдите по адресу `http://localhost:8080/index`
 
 По окончании работы нажмите комбинацию клавиш `Ctrl + c`, чтобы остановить сервер.
+
+## Примеры работы
+
+!(references/ref_1.png)
+
+!(references/ref_2.png)
+
+!(references/ref_3.png)
